@@ -1,0 +1,3 @@
+# OkHttp_Protocol
+基于MVC设计模式的框架,所有的网络请求url都写在protocol类中,网络请求回来的数据解析均写在Callback类中,完全解耦网络层跟view层
+BaseActivity中封装Handler
