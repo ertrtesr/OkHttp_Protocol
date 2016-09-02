@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itheima.okhttpdemo2.MainActivity">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="访问网络"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示内容"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/btn_start_topicactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="开启TopicActivity"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="我来了"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"/>
+
+        <com.itheima.okhttpdemo2.widgets.LoadingPage
+            android:id="@+id/loading_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants">
+        </com.itheima.okhttpdemo2.widgets.LoadingPage>
+    </RelativeLayout>
+</LinearLayout>
